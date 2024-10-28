@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sauget - Fashion Store</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="top-bar-left">
+        <select name="language" id="language">
+            <option value="en">English</option>
+            <option value="fr">Dutch</option>
+            <option value="fr">French</option>
+            <option value="gr">German</option>
+        </select>
+        <select name="currency" id="currency">
+            <option value="usd">USD</option>
+            <option value="aus">AUS</option>
+            <option value="inr">INR</option>
+            <option value="gbp">GBP</option>
+        </select>
+    </div>
+    <div class="top-bar-right">
+        <a href="#">Wishlist</a>
+        <a href="#">Check out</a>
+        <a href="#">Login</a>
+    </div>
+
+    <div class="top-bar-right">
+        <input type="text" placeholder="Enter your keyword...">
+        <i class="fa fa-search" aria-hidden="true"></i>
+    </div>
+</div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand"  href="index.html"><img src="images/logo.webp"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="men.html">Men</a></li>
+                    <li class="nav-item"><a class="nav-link" href="women.html">Women</a></li>
+                    <li class="nav-item"><a class="nav-link" href="fashion.html">Fashion</a></li>
+                    <li class="nav-item"><a class="nav-link" href="accessories.html">Accessories</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/slider1.jpg" class="d-block w-100" alt="Fashion Slide 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>FASHION WOMEN'S</h5>
+                    <h1 class="collection-title">COLLECTION</h1>
+                    <p>LOREM IPSUM DOLOR SIT AMET, CONSECTETUER ADIPISICING ELIT</p>
+                    <a href="#" class="btn btn-primary">SHOP NOW</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/slider2.jpg" class="d-block w-100" alt="Fashion Slide 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>FASHION WOMEN'S</h5>
+                    <h1 class="collection-title">LATEST COLLECTION</h1>
+                    <p>LOREM IPSUM DOLOR SIT AMET, CONSECTETUER ADIPISICING ELIT</p>
+                    <a href="#" class="btn btn-primary">SHOP NOW</a>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Promotional Grid -->
+    <section class="promo-section">
+        <div class="row g-0">
+            <div class="col-3">
+                <a href="#" class="promo-card">
+                    <div class="promo-image">
+                        <img src="images/promo1.jpg" alt="Fashion for Men">
+                        <div class="promo-overlay">
+                            <h2>FASHION FOR MEN</h2>
+                            <h3>CLOTHING</h3>
+                            <span class="btn-look">GET THE LOOK »</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-3">
+                <a href="#" class="promo-card2">
+                    <div class="promo-image">
+                        <img src="images/promo2.jpg" alt="Sauget Fashion Collection">
+                        <div class="promo-overlay">
+                            <h2>SAUGET FASHION</h2>
+                            <h3>COLLECTION</h3>
+                            <span class="btn-look">GET THE LOOK »</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-3">
+                <a href="#" class="promo-card">
+                    <div class="promo-image">
+                        <img src="images/promo3.jpg" alt="Accessories Sale">
+                        <div class="promo-overlay">
+                            <h2>ACCESSORIES</h2>
+                            <h3>-50% SALE</h3>
+                            <span class="btn-look">GET THE LOOK »</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-3">
+                <a href="#" class="promo-card2">
+                    <div class="promo-image">
+                        <img src="images/promo4.jpg" alt="Shoes Style Sale">
+                        <div class="promo-overlay">
+                            <h2>SHOES STYLE</h2>
+                            <h3>SALE UP TO 30%</h3>
+                            <span class="btn-look">GET THE LOOK »</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sorting Products -->
+    <div class="products-nav">
+        <span class="star">★</span>
+        <button class="nav-button active" data-category="featured">FEATURED PRODUCTS</button>
+        <span class="star">★</span>
+        <button class="nav-button" data-category="mostViewed">MOST VIEWED PRODUCTS</button>
+        <span class="star">★</span>
+        <button class="nav-button" data-category="new">NEW PRODUCTS</button>
+        <span class="star">★</span>
+    </div>
+
+    <div class="small-container">
+        <div class="row" id="products-grid">
+            <!-- Products will be inserted here by JavaScript -->
+        </div>
+    </div>
+    <script src="products.js"></script>
+
+
+  <!-- Testimonial Section -->
+  <section class="testimonial-section">
+    <div class="testimonial-nav">
+        <span class="star">★</span>
+        <h2>TESTIMONIAL</h2>
+        <span class="star">★</span>
+    </div>
+
+    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="testimonial-slide">
+                    <div class="testimonial">
+                        <img src="images/person1.jpg" class="customer-photo" alt="Arida Jome">
+                        <div class="testimonial-text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <h4 class="customer-name">Arida Jome</h4>
+                            <div class="customer-title">Customer</div>
+                            <br>
+                        </div>
+
+                        <img src="images/person2.jpg" class="customer-photo" alt="Arida Jome">
+                        <div class="testimonial-text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <h4 class="customer-name">Arida Jome</h4>
+                            <div class="customer-title">Customer</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="testimonial-slide">
+                    <div class="testimonial">
+                        <img src="images/person3.jpg" class="customer-photo" alt="John Doe">
+                        <div class="testimonial-text">
+                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <h4 class="customer-name">John Doe</h4>
+                            <div class="customer-title">Customer</div>
+                            <br>
+                        </div>
+
+                        <img src="images/person4.jpg" class="customer-photo" alt="Arida Jome">
+                        <div class="testimonial-text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <h4 class="customer-name">Arida Jome</h4>
+                            <div class="customer-title">Customer</div>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="testimonial-slide">
+                    <div class="testimonial">
+                        <img src="images/person5.jpg" class="customer-photo" alt="Jane Smith">
+                        <div class="testimonial-text">
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                            <h4 class="customer-name">Jane Smith</h4>
+                            <div class="customer-title">Customer</div>
+                        </div>
+
+                        <img src="images/person6.jpg" class="customer-photo" alt="Arida Jome">
+                        <div class="testimonial-text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <h4 class="customer-name">Arida Jome</h4>
+                            <div class="customer-title">Customer</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</section>
+
+<!-- LATEST NEWS--> 
+<div class="news-section">
+    <div class="news-nav">
+      <span class="star">★</span>
+      <h2>LATEST NEWS</h2>
+      <span class="star">★</span>
+    </div>
+    
+    <div class="news-container">
+      <div class="news-grid">
+        <!-- News Item 1 -->
+        <div class="news-item">
+          <div class="news-image">
+            <img src="images/1.jpg" alt="News Image 1">
+          </div>
+          <div class="news-content">
+            <h3><a href="link-to-your-gallery.html">Another post with a gallery</a></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nobis sed eligendi blanditiis...</p>
+            <span class="news-meta">by: Admin | Template web design</span>
+          </div>
+        </div>
+  
+        <!-- News Item 2 -->
+        <div class="news-item">
+          <div class="news-image">
+            <img src="images/2.jpg" alt="News Image 2">
+          </div>
+          <div class="news-content">
+            <h3><a href="link-to-your-gallery.html">Another post with a gallery</a></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nobis sed eligendi blanditiis...</p>
+            <span class="news-meta">by: Admin | Template web design</span>
+          </div>
+        </div>
+  
+        <!-- News Item 3 -->
+        <div class="news-item">
+          <div class="news-image">
+            <img src="images/3.jpg" alt="News Image 3">
+          </div>
+          <div class="news-content">
+            <h3><a href="link-to-your-gallery.html">Another post with a gallery</a></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nobis sed eligendi blanditiis...</p>
+            <span class="news-meta">by: Admin | Template web design</span>
+          </div>
+        </div>
+  
+        <!-- News Item 4 -->
+        <div class="news-item">
+          <div class="news-image">
+            <img src="images/4.jpg" alt="News Image 4">
+          </div>
+          <div class="news-content">
+            <h3><a href="link-to-your-gallery.html">Another post with a gallery</a></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nobis sed eligendi blanditiis...</p>
+            <span class="news-meta">by: Admin | Template web design</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Shipping Etc -->
+<section class="shipping-features">
+    <div class="shipping-container">
+        <div class="shipping-item">
+            <div class="icon-box">
+                <i class="fa fa-plane" aria-hidden="true"></i>
+            </div>
+            <h3>FREE & FAST SHIPPING</h3>
+            <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse</p>
+        </div>
+        
+        <div class="shipping-item">
+            <div class="icon-box">
+                <i class="fa fa-file-text" aria-hidden="true"></i>
+            </div>
+            <h3>FREE & FAST SHIPPING</h3>
+            <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse</p>
+        </div>
+        
+        <div class="shipping-item">
+            <div class="icon-box">
+                <i class="fa fa-cloud-upload" aria-hidden="true"></i>
+            </div>
+            <h3>FREE & FAST SHIPPING</h3>
+            <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse</p>
+        </div>
+        
+        <div class="shipping-item">
+            <div class="icon-box">
+                <i class="fa fa-whatsapp" aria-hidden="true"></i> 
+            </div>
+            <h3>FREE & FAST SHIPPING</h3>
+            <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse</p>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="new_footer_area bg_color">
+            <div class="new_footer_top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
+                                <h3 class="f-title f_600 t_color f_size_18">NEWSLETTER</h3>
+                                <p>Subscribe to the Sauget mailing list to receive updates on new arrivals, special offers and other discount information.</p>
+                                <form action="#" class="f_subscribe_two mailchimp" method="post" novalidate="true" _lpchecked="1">
+                                    <input type="text" name="EMAIL" class="form-control memail" placeholder="Email">
+                                    <button class="btn-sub" type="submit">Subscribe</button>
+                                    <p class="mchimp-errmessage" style="display: none;"></p>
+                                    <p class="mchimp-sucmessage" style="display: none;"></p>
+                                </form>
+                            <img class="ftr-payments" src="images/payment.webp">
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
+                                <h3 class="f-title f_600 t_color f_size_18">USEFUL LINKS</h3>
+                                <ul class="list-unstyled f_list">
+                                    <li><a href="#">Orders and Returns</a></li>
+                                    <li><a href="#">Search Items</a></li>
+                                    <li><a href="#">Advance Search</a></li>
+                                    <li><a href="#">Affiliates</a></li>
+                                    <li><a href="#">Group Sales</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
+                                <h3 class="f-title f_600 t_color f_size_18">Recent Posts</h3>
+                                <ul class="list-unstyled f_list">
+                                    <li><img class="footer-img" src="images/1.jpg"></li>
+                                    <p class="footer-img-cap">Another post with a gallery</p>
+                                    <li><img class="footer-img" src="images/2.jpg"></li>
+                                    <p class="footer-img-cap">Another post with a gallery</p>
+                                    <li><img class="footer-img" src="images/3.jpg"></li>
+                                    <p class="footer-img-cap">Another post with a gallery</p>
+                                </ul>
+                            </div>
+                        </div>  
+                        <div class="col-lg-3 col-md-6">
+                            <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
+                                <h3 class="f-title f_600 t_color f_size_18"><img src="images/logo.webp"></h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae sequi, illo facilis nisi error cumque eveniet, assumenda nesciunt accusamus consectetur eum ex corporis doloremque debitis voluptates dolorum, molestiae minima natus!</p>
+                                <div class="f_social_icon">
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                                    <i class="fa fa-wifi" aria-hidden="true"></i>
+                                    <i class="fa fa-google-plus" aria-hidden="true"></i>
+                                </div>
+                                <div class="ftr-btn">
+                                    <button>Contact us</button>
+                                    <button>Purchase</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_bg">
+                    <div class="footer_bg_one"></div>
+                    <div class="footer_bg_two"></div>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-sm-7">
+                            <p class="mb-0 f_400">Copyright © 2015 BootExperts</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

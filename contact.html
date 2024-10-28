@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>     
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="top-bar-left">
+        <select name="language" id="language">
+            <option value="en">English</option>
+            <option value="fr">Dutch</option>
+            <option value="fr">French</option>
+            <option value="gr">German</option>
+        </select>
+        <select name="currency" id="currency">
+            <option value="usd">USD</option>
+            <option value="aus">AUS</option>
+            <option value="inr">INR</option>
+            <option value="gbp">GBP</option>
+        </select>
+    </div>
+    <div class="top-bar-right">
+        <a href="#">Wishlist</a>
+        <a href="#">Check out</a>
+        <a href="#">Login</a>
+    </div>
+
+    <div class="top-bar-right">
+        <input type="text" placeholder="Enter your keyword...">
+        <i class="fa fa-search" aria-hidden="true"></i>
+    </div>
+</div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand"  href="index.html"><img src="images/logo.webp"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="men.html">Men</a></li>
+                    <li class="nav-item"><a class="nav-link" href="women.html">Women</a></li>
+                    <li class="nav-item"><a class="nav-link" href="fashion.html">Fashion</a></li>
+                    <li class="nav-item"><a class="nav-link" href="accessories.html">Accessories</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="images/hero.webp" class="hero-image">
+        <div class="hero-content">
+            <h1 class="hero-title">CONTACT US</h1>
+        </div>    
+    </section>
+
+    <!-- Map Section -->
+    <div class="map-section">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.2977421263713!2d144.95373731531897!3d-37.81592997975153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642b6af832249%3A0xe39e415e49a7c44e!2s121%20King%20St%2C%20Melbourne%20VIC%203000%2C%20Australia!5e0!3m2!1sen!2sus!4v1635434823576!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>GET IN TOUCH</h2>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <div class="contact-item-content">
+                            <h3>Address</h3>
+                            <p>121 King St, Melbourne VIC 3000, Australia</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <div class="contact-item-content">
+                            <h3>Phone</h3>
+                            <p>(801) 2345 - 6789</p>
+                            <p>Fax: (801) 2345 - 6789</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <div class="contact-item-content">
+                            <h3>Email</h3>
+                            <p>support@ourstore.com</p>
+                            <p>Website: www.ourstore.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+<!-- Footer Section -->
+<footer class="new_footer_area bg_color">
+    <div class="new_footer_top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
+                        <h3 class="f-title f_600 t_color f_size_18">NEWSLETTER</h3>
+                        <p>Subscribe to the Sauget mailing list to receive updates on new arrivals, special offers and other discount information.</p>
+                        <form action="#" class="f_subscribe_two mailchimp" method="post" novalidate="true" _lpchecked="1">
+                            <input type="text" name="EMAIL" class="form-control memail" placeholder="Email">
+                            <button class="btn-sub" type="submit">Subscribe</button>
+                            <p class="mchimp-errmessage" style="display: none;"></p>
+                            <p class="mchimp-sucmessage" style="display: none;"></p>
+                        </form>
+                    <img class="ftr-payments" src="images/payment.webp">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
+                        <h3 class="f-title f_600 t_color f_size_18">USEFUL LINKS</h3>
+                        <ul class="list-unstyled f_list">
+                            <li><a href="#">Orders and Returns</a></li>
+                            <li><a href="#">Search Items</a></li>
+                            <li><a href="#">Advance Search</a></li>
+                            <li><a href="#">Affiliates</a></li>
+                            <li><a href="#">Group Sales</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
+                        <h3 class="f-title f_600 t_color f_size_18">Recent Posts</h3>
+                        <ul class="list-unstyled f_list">
+                            <li><img class="footer-img" src="images/1.jpg"></li>
+                            <li><a href="#">Another post with a gallery</a></li>
+                            <li><img class="footer-img" src="images/2.jpg"></li>
+                            <li><a href="#">Another post with a gallery</a></li>                            
+                            <li><img class="footer-img" src="images/3.jpg"></li>
+                            <li><a href="#">Another post with a gallery</a></li>                        
+                        </ul>
+                    </div>
+                </div>  
+                <div class="col-lg-3 col-md-6">
+                    <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
+                        <h3 class="f-title f_600 t_color f_size_18"><img src="images/logo.webp"></h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae sequi, illo facilis nisi error cumque eveniet, assumenda nesciunt accusamus consectetur eum ex corporis doloremque debitis voluptates dolorum, molestiae minima natus!</p>
+                        <div class="f_social_icon">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                            <i class="fa fa-wifi" aria-hidden="true"></i>
+                            <i class="fa fa-google-plus" aria-hidden="true"></i>
+                        </div>
+                        <div class="ftr-btn">
+                            <button>Contact us</button>
+                            <button>Purchase</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bg">
+            <div class="footer_bg_one"></div>
+            <div class="footer_bg_two"></div>
+        </div>
+    </div>
+    <div class="footer_bottom">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-sm-7">
+                    <p class="mb-0 f_400">Copyright © 2015 BootExperts</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
